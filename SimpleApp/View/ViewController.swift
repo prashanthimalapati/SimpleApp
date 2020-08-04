@@ -103,6 +103,14 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         cell?.configureCell(withViewModel: items)
         return cell!
     }
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if(indexPath.row % 2 == 0) {
+            cell.backgroundColor =  UIColor.groupTableViewBackground
+        } else {
+            cell.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        }
+    }
+    
     
 }
 
