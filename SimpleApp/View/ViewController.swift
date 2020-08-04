@@ -55,7 +55,7 @@ class ViewController : UIViewController {
         tblView.delegate = self
         tblView.dataSource = self
         tblView.separatorColor = UIColor.clear
-        tblView.backgroundColor = #colorLiteral(red: 0.5, green: 0.5, blue: 0.5, alpha: 0.5)
+        tblView.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         tblView.allowsSelection = false
         tblView.translatesAutoresizingMaskIntoConstraints = false
         tblView.rowHeight = UITableView.automaticDimension
