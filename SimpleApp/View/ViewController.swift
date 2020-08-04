@@ -69,7 +69,6 @@ class ViewController : UIViewController {
             tblView.trailingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.trailingAnchor),
             ])
         
-        
     }
     
     
@@ -78,6 +77,9 @@ class ViewController : UIViewController {
         viewModel.getDataFromAPI(url: demoURL.strUrl) { (responseData) in
             Apputils.sharedInstance.removeLoader()
             DispatchQueue.main.async { [weak self] in
+                self?.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+                self?.navigationController?.navigationBar.topItem?.title = responseData.title
+                self?.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.8549019694, green: 0.250980407, blue: 0.4784313738, alpha: 1)
                 self?.tblView.reloadData()
             }
         }
