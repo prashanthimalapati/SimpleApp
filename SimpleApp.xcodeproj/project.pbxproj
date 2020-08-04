@@ -22,6 +22,7 @@
 		893AB98624D975B200719115 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893AB98424D975B200719115 /* ViewController.swift */; };
 		893AB98724D975B200719115 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893AB98524D975B200719115 /* CustomCell.swift */; };
 		893AB98924D975B800719115 /* ListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893AB98824D975B800719115 /* ListModel.swift */; };
+		893AB98B24D978BE00719115 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 893AB98A24D978BE00719115 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		893AB98424D975B200719115 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		893AB98524D975B200719115 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		893AB98824D975B800719115 /* ListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListModel.swift; sourceTree = "<group>"; };
+		893AB98A24D978BE00719115 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +187,7 @@
 			children = (
 				893AB94C24D9752700719115 /* Assets.xcassets */,
 				893AB94E24D9752700719115 /* LaunchScreen.storyboard */,
+				893AB98A24D978BE00719115 /* Main.storyboard */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				893AB98B24D978BE00719115 /* Main.storyboard in Resources */,
 				893AB95024D9752700719115 /* LaunchScreen.storyboard in Resources */,
 				893AB94D24D9752700719115 /* Assets.xcassets in Resources */,
 			);

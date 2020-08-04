@@ -19,11 +19,14 @@ class ViewController : UIViewController {
     
     var tblView = UITableView()
     var viewModel = ListViewModel()
+    var refreshControl: UIRefreshControl!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setUpTableView()
-        
+        refreshControl = UIRefreshControl()
+        refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        refreshControl.addTarget(self, action: #selector(refresh), for: .valueChanged)
+        tblView.addSubview(refreshControl)
         getData()
         NotificationCenter.default.addObserver(self, selector: #selector(ViewController.rotated), name: UIDevice.orientationDidChangeNotification, object: nil)
     }
@@ -38,7 +41,11 @@ class ViewController : UIViewController {
             print("Portrait")
         }
     }
-    
+    @objc func refresh(_ sender: Any) {
+        getData()
+        refreshControl.endRefreshing()
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
